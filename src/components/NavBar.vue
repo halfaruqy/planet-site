@@ -44,13 +44,78 @@
 </template>
 
 <script>
-import planets from "../menu.json"
+const menu =[
+  {
+    name: "Mercury",
+    url: "/mercury",
+    color: "#DEF4FC",
+    textColor: "text-[#DEF4FC]",
+    borderColor: "border-[#DEF4FC]",
+    hoverColor: "hover:border-[#DEF4FC]"
+  },
+  {
+    name: "Venus",
+    url: "/venus",
+    color: "#F7CC7F",
+    textColor: "text-[#F7CC7F]",
+    borderColor: "border-[#F7CC7F]",
+    hoverColor: "hover:border-[#F7CC7F]"
+  },
+  {
+    name: "Earth",
+    url: "/earth",
+    color: "#545BFE",
+    textColor: "text-[#545BFE]",
+    borderColor: "border-[#545BFE]",
+    hoverColor: "hover:border-[#545BFE]"
+  },
+  {
+    name: "Mars",
+    url: "/mars",
+    color: "#FF6A45",
+    textColor: "text-[#FF6A45]",
+    borderColor: "border-[#FF6A45]",
+    hoverColor: "hover:border-[#FF6A45]"
+  },
+  {
+    name: "Jupiter",
+    url: "/jupiter",
+    color: "#ECAD7A",
+    textColor: "text-[#ECAD7A]",
+    borderColor: "border-[#ECAD7A]",
+    hoverColor: "hover:border-[#ECAD7A]"
+  },
+  {
+    name: "Saturn",
+    url: "/saturn",
+    color: "#FCCB6B",
+    textColor: "text-[#FCCB6B]",
+    borderColor: "border-[#FCCB6B]",
+    hoverColor: "hover:border-[#FCCB6B]"
+  },
+  {
+    name: "Uranus",
+    url: "/uranus",
+    color: "#65F0D5",
+    textColor: "text-[#65F0D5]",
+    borderColor: "border-[#65F0D5]",
+    hoverColor: "hover:border-[#65F0D5]"
+  },
+  {
+    name: "Neptune",
+    url: "/neptune",
+    color: "#497EFA",
+    textColor: "text-[#497EFA]",
+    borderColor: "border-[#497EFA]",
+    hoverColor: "hover:border-[#497EFA]"
+  }
+]
 
 export default {
     name: "NavBar",
     data() {
         return {
-            menuItems: planets,
+            menuItems: menu,
             menuActive: false,
             scrollPosition: 0,
             bgColor: "bg-transparent",
@@ -107,7 +172,7 @@ export default {
         },
         planetColor(planet, textColor) {
             if(this.hoverPlanet === planet) {
-                return `${textColor} border-none lg:border-t-4`
+                return `${textColor} lg:border-t-4`
             }
             return ""
         },

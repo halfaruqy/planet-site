@@ -8,7 +8,8 @@ import autoprefixer from 'autoprefixer';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
+  base: '/planet-site/'
+  ,plugins: [
     vue(),
   ],
   resolve: {
