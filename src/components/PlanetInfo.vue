@@ -19,7 +19,7 @@
             <p>{{ overviewContent }}</p>
           </div>
           <div class="flex justify-center text-[15px] font-spartan pt-8 mx-5 font-semibold text-center sm:ml-0 sm:place-self-start sm:text-start">
-            <span class=" opacity-50 font-light mr-1">Source :</span> <a :href="overviewSource" class="underline opacity-75">Wikipedia<img class="inline ml-1 pb-[2px] no-underline" src="src/assets/icon-source.svg" alt=""></a>
+            <span class=" opacity-50 font-light mr-1">Source :</span> <a :href="overviewSource" class="underline opacity-75">Wikipedia<img class="inline ml-1 pb-[2px] no-underline" src="../assets/icon-source.svg" alt=""></a>
           </div>
         </div>
 
@@ -66,14 +66,46 @@
 import NavBar from '../components/NavBar.vue';
 import SubNavPlanet from "../components/SubNavPlanet.vue"
 
+import imgMercury from "../assets/planet-mercury.svg"
+import internalMercury from "../assets/planet-mercury-internal.svg"
+import GeoMercury from "../assets/geology-mercury.png"
+
+import imgVenus from "../assets/planet-venus.svg"
+import internalVenus from "../assets/planet-venus-internal.svg"
+import GeoVenus from "../assets/geology-venus.png"
+
+import imgEarth from "../assets/planet-earth.svg"
+import internalEarth from "../assets/planet-earth-internal.svg"
+import GeoEarth from "../assets/geology-earth.png"
+
+import imgMars from "../assets/planet-mars.svg"
+import internalMars from "../assets/planet-mars-internal.svg"
+import GeoMars from "../assets/geology-mars.png"
+
+import imgJupiter from "../assets/planet-jupiter.svg"
+import internalJupiter from "../assets/planet-jupiter-internal.svg"
+import GeoJupiter from "../assets/geology-jupiter.png"
+
+import imgSaturn from "../assets/planet-saturn.svg"
+import internalSaturn from "../assets/planet-saturn-internal.svg"
+import GeoSaturn from "../assets/geology-saturn.png"
+
+import imgUranus from "../assets/planet-uranus.svg"
+import internalUranus from "../assets/planet-uranus-internal.svg"
+import GeoUranus from "../assets/geology-uranus.png"
+
+import imgNeptune from "../assets/planet-neptune.svg"
+import internalNeptune from "../assets/planet-neptune-internal.svg"
+import GeoNeptune from "../assets/geology-neptune.png"
+
 const planets = [
   {
     name: "Mercury",
     url: "/mercury",
     color: "#DEF4FC",
-    image: "src/assets/planet-mercury.svg",
-    imageInternal: "src/assets/planet-mercury-internal.svg",
-    imageGeo: "src/assets/geology-mercury.png",
+    image: imgMercury,
+    imageInternal: internalMercury,
+    imageGeo: GeoMercury,
     overview: {
       content: "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
       source: "https://en.wikipedia.org/wiki/Mercury_(planet)"
@@ -95,9 +127,9 @@ const planets = [
     name: "Venus",
     url: "/venus",
     color: "#F7CC7F",
-    image: "src/assets/planet-venus.svg",
-    imageInternal: "src/assets/planet-venus-internal.svg",
-    imageGeo: "src/assets/geology-venus.png",
+    image: imgVenus,
+    imageInternal: internalVenus,
+    imageGeo: GeoVenus,
     overview: {
       content: "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
       source: "https://en.wikipedia.org/wiki/Venus"
@@ -119,9 +151,9 @@ const planets = [
     name: "Earth",
     url: "/earth",
     color: "#545BFE",
-    image: "src/assets/planet-earth.svg",
-    imageInternal: "src/assets/planet-earth-internal.svg",
-    imageGeo: "src/assets/geology-earth.png",
+    image: imgEarth,
+    imageInternal: internalEarth,
+    imageGeo: GeoEarth,
     overview: {
       content: "Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.",
       source: "https://en.wikipedia.org/wiki/Earth"
@@ -143,9 +175,9 @@ const planets = [
     name: "Mars",
     url: "/mars",
     color: "#FF6A45",
-    image: "src/assets/planet-mars.svg",
-    imageInternal: "src/assets/planet-mars-internal.svg",
-    imageGeo: "src/assets/geology-mars.png",
+    image: imgMars,
+    imageInternal: internalMars,
+    imageGeo: GeoMars,
     overview: {
       content: "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the \"Red Planet\".",
       source: "https://en.wikipedia.org/wiki/Mars"
@@ -167,9 +199,9 @@ const planets = [
     name: "Jupiter",
     url: "/jupiter",
     color: "#ECAD7A",
-    image: "src/assets/planet-jupiter.svg",
-    imageInternal: "src/assets/planet-jupiter-internal.svg",
-    imageGeo: "src/assets/geology-jupiter.png",
+    image: imgJupiter,
+    imageInternal: internalJupiter,
+    imageGeo: GeoJupiter,
     overview: {
       content: "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.",
       source: "https://en.wikipedia.org/wiki/Jupiter"
@@ -191,9 +223,9 @@ const planets = [
     name: "Saturn",
     url: "/saturn",
     color: "#FCCB6B",
-    image: "src/assets/planet-saturn.svg",
-    imageInternal: "src/assets/planet-saturn-internal.svg",
-    imageGeo: "src/assets/geology-saturn.png",
+    image: imgSaturn,
+    imageInternal: internalSaturn,
+    imageGeo: GeoSaturn,
     overview: {
       content: "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.",
       source: "https://en.wikipedia.org/wiki/Saturn"
@@ -215,9 +247,9 @@ const planets = [
     name: "Uranus",
     url: "/uranus",
     color: "#65F0D5",
-    image: "src/assets/planet-uranus.svg",
-    imageInternal: "src/assets/planet-uranus-internal.svg",
-    imageGeo: "src/assets/geology-uranus.png",
+    image: imgUranus,
+    imageInternal: internalUranus,
+    imageGeo: GeoUranus,
     overview: {
       content: "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
       source: "https://en.wikipedia.org/wiki/Uranus"
@@ -239,9 +271,9 @@ const planets = [
     name: "Neptune",
     url: "/neptune",
     color: "#497EFA",
-    image: "src/assets/planet-neptune.svg",
-    imageInternal: "src/assets/planet-neptune-internal.svg",
-    imageGeo: "src/assets/geology-neptune.png",
+    image: imgNeptune,
+    imageInternal: internalNeptune,
+    imageGeo: GeoNeptune,
     overview: {
       content: "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.",
       source: "https://en.wikipedia.org/wiki/Neptune"
